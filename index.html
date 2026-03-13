@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>我的个人主页</title>
+    <meta
+      name="description"
+      content="前端学习者 / 开发爱好者 / 持续成长中的个人主页，展示项目、技能和联系方式。"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="bg-decoration" aria-hidden="true"></div>
+
+    <header class="site-header" id="top">
+      <nav class="nav container" aria-label="主导航">
+        <a class="brand" href="#top">我的个人主页</a>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-links">
+          菜单
+        </button>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#about">关于我</a></li>
+          <li><a href="#projects">项目展示</a></li>
+          <li><a href="#skills">技能栈</a></li>
+          <li><a href="#contact">联系我</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero container" aria-labelledby="hero-title">
+        <div class="hero-content glass">
+          <p class="hero-eyebrow">你好，我是</p>
+          <h1 id="hero-title">前端学习者 / 开发爱好者 / 持续成长中</h1>
+          <p class="hero-text">
+            一名热爱创造的学生开发者，专注于做出好看、好用、可持续迭代的网页作品。
+          </p>
+          <div class="hero-actions">
+            <a class="btn" href="#projects">查看我的项目</a>
+            <a class="btn btn-ghost" href="#contact">联系我</a>
+          </div>
+          <ul class="highlights" aria-label="个人亮点">
+            <li><strong>15+</strong><span>学习项目</span></li>
+            <li><strong>5</strong><span>核心技术</span></li>
+            <li><strong>100%</strong><span>持续成长</span></li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section container" id="about">
+        <h2>关于我</h2>
+        <p>
+          我热爱用代码解决问题，关注易用性与视觉表达，持续学习 Web 开发与数据分析相关技术。
+          希望把每一次课程作业与练习，都打磨成可展示、可复用的真实作品。
+        </p>
+      </section>
+
+      <section class="section container" id="projects">
+        <h2>项目展示</h2>
+        <div class="cards">
+          <article class="card">
+            <p class="card-tag">课程项目</p>
+            <h3>个人主页模板</h3>
+            <p>使用 HTML/CSS/JavaScript 构建，支持响应式布局并适配 GitHub Pages。</p>
+          </article>
+          <article class="card">
+            <p class="card-tag">学习实践</p>
+            <h3>学习笔记站点</h3>
+            <p>整理前端学习笔记与示例代码，帮助复盘与分享。</p>
+          </article>
+          <article class="card">
+            <p class="card-tag">数据练习</p>
+            <h3>数据可视化练习</h3>
+            <p>通过图表展示数据分析结果，提升信息表达效率。</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section container" id="skills">
+        <h2>技能栈</h2>
+        <ul class="tags" aria-label="技能标签">
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>Python</li>
+          <li>数据分析</li>
+        </ul>
+      </section>
+
+      <section class="section container" id="contact">
+        <h2>联系我</h2>
+        <div class="contact-box glass">
+          <p>欢迎交流学习、课程合作和项目共创：</p>
+          <p>
+            📮 <a href="mailto:hello@example.com">hello@example.com</a>
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>© <span id="year"></span> 我的个人主页</p>
+      </div>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
